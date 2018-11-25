@@ -34,17 +34,17 @@ Engineering Notebook
 Design/CAD  
 \- Anthony Zou  
 \- Sam Bravo  
-\- Justin Li  
-
-
-
-
-
-
-
-
-
-
-
-
+\- Justin Li                      
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
 And p.s. for anyone who wants to make a github repo, NEVER use .md files; use .txt instead TRUST ME
