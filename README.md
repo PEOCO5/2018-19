@@ -11,27 +11,27 @@ Thomas DiZinno - Treasurer
 Ethan Silverstein - Vice Captain  
 
 Programmers  
-  Emily Goldman  
-  Jonathan Debel  
-  Shashank Singal  
+- Emily Goldman  
+- Jonathan Debel  
+- Shashank Singal  
 Builders  
-  Pearce O'Connor  
-  Joseph Rosillo  
-  Nicole Zhao  
-  Euan Kang  
-  Piotr Galanek  
-  Emerson  
+- Pearce O'Connor  
+- Joseph Rosillo  
+- Nicole Zhao  
+- Euan Kang  
+- Piotr Galanek  
+- Emerson  
 Outreach/Public Relations  
-  Rhea Sharma  
-  Owen Kyler-Wank  
-  Nicoletta Labita  
+- Rhea Sharma  
+- Owen Kyler-Wank  
+- Nicoletta Labita  
 Engineering Notebook  
-  Sebastian Ng  
-  Gerald Kim  
-  Ron Regev  
-  Ryan Chen  
-  Andrew Zhang  
+- Sebastian Ng  
+- Gerald Kim  
+- Ron Regev  
+- Ryan Chen  
+- Andrew Zhang  
 Design/CAD  
-  Anthony Zou  
-  Sam Bravo  
-  Justin Li  
+- Anthony Zou  
+- Sam Bravo  
+- Justin Li  
