@@ -6,7 +6,6 @@ Our Team:
 
 Rohan Ghotra - Captain
 Jaime Chen - Secretary
-
 Vishranth Arunkumar - Secretary
 Thomas DiZinno - Treasurer
 Ethan Silverstein - Vice Captain
