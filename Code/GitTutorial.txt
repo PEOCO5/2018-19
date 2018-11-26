@@ -6,7 +6,9 @@ Git Tutorial
    The Bash is where you will run all your commands
 4. Go to https://github.com and create/login to your account
 5. Create a GitHub repository and title it whatever you want
-6. In your gitbash type ```git config --global user.name "Syosset Syborgs"``` then press enter
+6. In your gitbash type ```
+git config --global user.name "Syosset Syborgs"
+``` then press enter
    Then type ```git config --global user.email "syborg10696@gmail.com"```
    (I think it's pretty obvious that you should change what's in the quotes)
 7. Go back to GitHub and click *Clone or download*, then copy the link
