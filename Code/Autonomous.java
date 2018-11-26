@@ -1,7 +1,7 @@
 /*
  * Team:    Syosset Syborgs
  * ID:      10696
- * 
+ *
  * Author:  Rohan Ghotra        GitHub User: Rohan75
  * Version: v1.3
  */
@@ -9,6 +9,7 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.CRServo;
@@ -23,6 +24,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer;
 import org.firstinspires.ftc.robotcore.external.tfod.TFObjectDetector;
 import org.firstinspires.ftc.robotcore.external.tfod.Recognition;
 
+@TeleOp(name="autono", group="TeleOp")
 public class Autonomous extends LinearOpMode {
 
     // Drive system
@@ -40,7 +42,7 @@ public class Autonomous extends LinearOpMode {
             TURN_RADIUS = Math.sqrt(Math.pow((double) LENGTH / 2, 2) + Math.pow((double) WIDTH / 2, 2));
 
     // VuForia + TensorFlow declarations
-    private static final String VUFORIA_KEY = "VUFORIA LICENSE KEY";
+    private static final String VUFORIA_KEY = "AU4FDNH/////AAABmRVll+1KLUOvurFViKcVqNpTWXwbjf31OgDqmYXYdxSUgDANPXZ2u318WCLJ72KycjRKeDz92M2BmL8lNtnE5seRlMt7ES28yoMbkp1ic0xgmLAo1f1tXFBySj9WFJD708PscrGLeGr8vbbhDb6Zmv1t4i+ZEsHZVQyijBGH6t+egvvwjYdqA+tOZdujYxX1TWmGXJQVwI1PpA9YFh8+m2DfFteZ7zyyirYeFllW03a8yHZZyeVF0GycAPn9nBkPEDWEFodD9S2/mKJLdq/FyPIyfbh/9v6K8biIL0UyyOzIKEI3N542XZspTv6RkWeKcMwqOZqaPXBtDWnX8uxJ3gaq0Zbb2t12cBBBjVj5d5a/";
     private VuforiaLocalizer vuforia;
     private TFObjectDetector tfod;
     private ArrayList<minerals> sampling;
