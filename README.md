@@ -5,6 +5,7 @@ Syosset High School's FTC team, Syosset Syborgs
 Our Team:  
 
 Rohan Ghotra - Captain - Big Gay
+
 Ethan Silverstein - Vice Captain  
 Jaime Chen - Secretary  
 Vishranth Arunkumar - Secretary  
