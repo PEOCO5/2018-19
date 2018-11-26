@@ -10,7 +10,7 @@ Vishranth Arunkumar - Secretary
 Thomas DiZinno - Treasurer  
 Ethan Silverstein - Vice Captain 
 
-Programmers 
+Programmers  
 \- Emily Goldman  
 \- Jonathan Debel  
 \- Shashank Singal  
