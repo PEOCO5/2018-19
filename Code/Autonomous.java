@@ -1,7 +1,7 @@
-/**
+/*
  * Team:    Syosset Syborgs
  * ID:      10696
- *
+ * 
  * Author:  Rohan Ghotra        GitHub User: Rohan75
  * Version: v2.2
  */
@@ -37,7 +37,7 @@ public class Autonomous extends LinearOpMode {
     private static final int LENGTH = 14, WIDTH = 18, WHEEL_RADIUS = 2, TICKS_PER_ROT = 1440, GEAR_RATIO = 60,
             TICKS_PER_DEGREE = TICKS_PER_ROT * GEAR_RATIO / 360;
     private static final double TICKS_PER_INCH = TICKS_PER_ROT * GEAR_RATIO / 2 * Math.PI * WHEEL_RADIUS,
-            TURN_RADIUS = Math.sqrt(Math.pow((double)LENGTH/2, 2) + Math.pow((double)WIDTH/2, 2));
+            TURN_RADIUS = Math.sqrt(Math.pow((double) LENGTH / 2, 2) + Math.pow((double) WIDTH / 2, 2));
 
     // VuForia + TensorFlow declarations
     private static final String VUFORIA_KEY = "AU4FDNH/////AAABmRVll+1KLUOvurFViKcVqNpTWXwbjf31OgDqmYXYdxSUgDANPXZ2u318WCLJ72KycjRKeDz92M2BmL8lNtnE5seRlMt7ES28yoMbkp1ic0xgmLAo1f1tXFBySj9WFJD708PscrGLeGr8vbbhDb6Zmv1t4i+ZEsHZVQyijBGH6t+egvvwjYdqA+tOZdujYxX1TWmGXJQVwI1PpA9YFh8+m2DfFteZ7zyyirYeFllW03a8yHZZyeVF0GycAPn9nBkPEDWEFodD9S2/mKJLdq/FyPIyfbh/9v6K8biIL0UyyOzIKEI3N542XZspTv6RkWeKcMwqOZqaPXBtDWnX8uxJ3gaq0Zbb2t12cBBBjVj5d5a/";
@@ -111,23 +111,22 @@ public class Autonomous extends LinearOpMode {
         private static void moveZ(String type, double value) {
             type = type.toLowerCase();
             if (type == "inches") {
-                FL.setTargetPosition((int)(FL.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                FL.setTargetPosition((int) (FL.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 FL.setPower(.5);
-                FR.setTargetPosition((int)(FR.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                FR.setTargetPosition((int) (FR.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 FR.setPower(.5);
-                BL.setTargetPosition((int)(BL.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                BL.setTargetPosition((int) (BL.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 BL.setPower(.5);
-                BR.setTargetPosition((int)(BR.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                BR.setTargetPosition((int) (BR.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 BR.setPower(.5);
-            }
-            else if (type == "degrees") {
-                FL.setTargetPosition((int)(FL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+            } else if (type == "degrees") {
+                FL.setTargetPosition((int) (FL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 FL.setPower(.5);
-                FR.setTargetPosition((int)(FR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+                FR.setTargetPosition((int) (FR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 FR.setPower(.5);
-                BL.setTargetPosition((int)(BL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+                BL.setTargetPosition((int) (BL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 BL.setPower(.5);
-                BR.setTargetPosition((int)(BR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+                BR.setTargetPosition((int) (BR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 BR.setPower(.5);
             }
         }
@@ -136,40 +135,39 @@ public class Autonomous extends LinearOpMode {
         public static void moveX(String type, double value) {
             type = type.toLowerCase();
             if (type.equals("inches")) {
-                FL.setTargetPosition((int)(FL.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                FL.setTargetPosition((int) (FL.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 FL.setPower(.5);
-                FR.setTargetPosition((int)(FR.getCurrentPosition() - (value * TICKS_PER_INCH)));
+                FR.setTargetPosition((int) (FR.getCurrentPosition() - (value * TICKS_PER_INCH)));
                 FR.setPower(.5);
-                BL.setTargetPosition((int)(BL.getCurrentPosition() - (value * TICKS_PER_INCH)));
+                BL.setTargetPosition((int) (BL.getCurrentPosition() - (value * TICKS_PER_INCH)));
                 BL.setPower(.5);
-                BR.setTargetPosition((int)(BR.getCurrentPosition() + (value * TICKS_PER_INCH)));
+                BR.setTargetPosition((int) (BR.getCurrentPosition() + (value * TICKS_PER_INCH)));
                 BR.setPower(.5);
-            }
-            else if (type.equals("degrees")) {
-                FL.setTargetPosition((int)(FL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+            } else if (type.equals("degrees")) {
+                FL.setTargetPosition((int) (FL.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 FL.setPower(.5);
-                FR.setTargetPosition((int)(FR.getCurrentPosition() - (value * TICKS_PER_DEGREE)));
+                FR.setTargetPosition((int) (FR.getCurrentPosition() - (value * TICKS_PER_DEGREE)));
                 FR.setPower(.5);
-                BL.setTargetPosition((int)(BL.getCurrentPosition() - (value * TICKS_PER_DEGREE)));
+                BL.setTargetPosition((int) (BL.getCurrentPosition() - (value * TICKS_PER_DEGREE)));
                 BL.setPower(.5);
-                BR.setTargetPosition((int)(BR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
+                BR.setTargetPosition((int) (BR.getCurrentPosition() + (value * TICKS_PER_DEGREE)));
                 BR.setPower(.5);
             }
         }
 
         // turning; positive degrees for right, neagtive degrees for left
         public static void turnY(double degrees) {
-            double turnInches = (degrees/360) * (2 * Math.PI * TURN_RADIUS);
-            FL.setTargetPosition((int)(FL.getCurrentPosition() + (turnInches * TICKS_PER_INCH / 2)));
-            FR.setTargetPosition((int)(FR.getCurrentPosition() - (turnInches * TICKS_PER_INCH / 2)));
-            BL.setTargetPosition((int)(BL.getCurrentPosition() + (turnInches * TICKS_PER_INCH / 2)));
-            BR.setTargetPosition((int)(BR.getCurrentPosition() - (turnInches * TICKS_PER_INCH / 2)));
+            double turnInches = (degrees / 360) * (2 * Math.PI * TURN_RADIUS);
+            FL.setTargetPosition((int) (FL.getCurrentPosition() + (turnInches * TICKS_PER_INCH / 2)));
+            FR.setTargetPosition((int) (FR.getCurrentPosition() - (turnInches * TICKS_PER_INCH / 2)));
+            BL.setTargetPosition((int) (BL.getCurrentPosition() + (turnInches * TICKS_PER_INCH / 2)));
+            BR.setTargetPosition((int) (BR.getCurrentPosition() - (turnInches * TICKS_PER_INCH / 2)));
         }
     }
 
     // Method for controlling linear actuator movement
     public void controlActuator(double degrees) {
-        actuator.setTargetPosition((int)(actuator.getCurrentPosition() + (degrees * TICKS_PER_DEGREE)));
+        actuator.setTargetPosition((int) (actuator.getCurrentPosition() + (degrees * TICKS_PER_DEGREE)));
     }
 
     public ArrayList<minerals> objectDetection(List<Recognition> objectsFound) {
