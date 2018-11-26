@@ -52,6 +52,7 @@ public class Autonomous extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
         initVuforia();
+        initTfod();
 
         waitForStart();
 
@@ -59,6 +60,7 @@ public class Autonomous extends LinearOpMode {
 
         while (opModeIsActive()) {
             // Sampling
+            tfod.activate();
             while (opModeIsActive() && sampling == null) {
                 sampling = objectDetection(tfod.getUpdatedRecognitions());
             }
@@ -171,7 +173,7 @@ public class Autonomous extends LinearOpMode {
     }
 
     public ArrayList<minerals> objectDetection(List<Recognition> objectsFound) {
-        ArrayList<minerals> order;
+        ArrayList<minerals> order = new ArrayList<minerals>();
 
         if (objectsFound.size() == 3) {
             int goldPos = 0;
@@ -219,6 +221,14 @@ public class Autonomous extends LinearOpMode {
         parameters.cameraName = hardwareMap.get(WebcamName.class, "Webcam 1");
 
         vuforia = ClassFactory.getInstance().createVuforia(parameters);
+    }
+
+    private void initTfod() {
+        int tfodMonitorViewId = hardwareMap.appContext.getResources().getIdentifier(
+                "tfodMonitorViewId", "id", hardwareMap.appContext.getPackageName());
+        TFObjectDetector.Parameters tfodParameters = new TFObjectDetector.Parameters(tfodMonitorViewId);
+        tfod = ClassFactory.getInstance().createTFObjectDetector(tfodParameters, vuforia);
+        tfod.loadModelFromAsset("RoverRuckus.tflite", "Gold Mineral");
     }
 
 }
