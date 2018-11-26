@@ -6,6 +6,8 @@
  * Version: v2.1
  */
 
+// NOTE: This code is currently disabled and unresponsive, do not attempt to use
+
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
